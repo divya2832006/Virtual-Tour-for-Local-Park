@@ -87,8 +87,7 @@ Press Play ▶️ in the Unity Editor to start the tour.
 
 🌐 Option 2 — WebGL Build (Browser)
 Open the hosted link (if deployed on GitHub Pages / Netlify).
-Example: https://yourusername.github.io/VirtualTour_LocalPark
-
+Example: https://github.com/divya2832006/Virtual-Tour-for-Local-Park
 🧩 Core Scripts Description
 Script	Purpose
 PlayerController.cs	Handles camera & player navigation.
