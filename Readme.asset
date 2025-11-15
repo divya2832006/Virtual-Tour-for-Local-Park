@@ -1,59 +1,155 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
-  m_Name: Readme
-  m_EditorClassIdentifier: 
-  icon: {fileID: 2800000, guid: 44a17a5b205fcd349a24700e6f5615bd, type: 3}
-  title: Welcome to Starter Assets!
-  sections:
-  - heading: Starter Assets Readme
-    text: 
-    linkText: 
-    url: 
-  - heading: 
-    text: 'Starter Assets include First and Third Person Character controllers built
-      in a modular way as a solid foundation for any game genre. '
-    linkText: Starter Assets - First Person Character Controller
-    url: http://u3d.as/2z1q
-  - heading: 
-    text: 
-    linkText: Starter Assets - Third Person Character Controller
-    url: http://u3d.as/2z1r
-  - heading: 
-    text: "The Starter Assets packages are compatible with Unity 2020.3 LTS and leverage
-      Unity\u2019s CharacterController component."
-    linkText: 
-    url: 
-  - heading: Important note
-    text: The Starter Assets packages require the Input System and Cinemachine packages
-      to work. See the documentation (Assets/StarterAssets/StarterAssets_Documentation.pdf)
-      for more information.
-    linkText: 
-    url: 
-  - heading: 'Get started  '
-    text: In StarterAssets/ThirdPersonController/Scenes or StarterAssets/FirstPersonController/Scenes,
-      you will find the Playground Scene. Here you can use the Starter Assets controller
-      in a simple playground environment and start adjusting the controller settings
-      to your liking.
-    linkText: 
-    url: 
-  - heading: Documentation
-    text: See the documentation (Assets/StarterAssets/StarterAssets_Documentation.pdf)
-      for more information on how to set up the Starter Assets in a new Scene, in
-      HDRP/URP, or for mobile devices.
-    linkText: 
-    url: 
-  - heading: 'We want to hear your feedback! '
-    text: 
-    linkText: Click here to let us know what you think about this package.
-    url: https://unitysoftware.co1.qualtrics.com/jfe/form/SV_5cg7IkyOprbHqia?packagename=starterassets
-  loadedLayout: 1
+# 🌳 Virtual Tour for Local Park
+
+An immersive **3D Virtual Tour Application** built using **Unity** that lets users explore a **local park environment** from their desktop or browser.  
+The project simulates real-world visuals including trees, benches, fountains, lighting, and ambient sound to create an engaging digital experience.
+
+---
+
+## 🧠 Project Overview
+
+This project demonstrates how a 3D environment can be used to replicate a **real park experience**.  
+Users can move around the park, interact with objects (hotspots), and enjoy the realistic atmosphere created through lighting and sounds.
+
+**Key Features**
+- 🏞️ Interactive 3D park environment
+- 🚶‍♂️ First-person / free camera navigation
+- 💡 Baked and real-time lighting setup
+- 🔊 Ambient nature sounds and click interactions
+- 🪑 Prefabs for benches, lamps, trees, and fountain
+- 🎮 User-friendly UI for teleportation and help info
+- 🌐 WebGL and Desktop builds supported
+- 🧩 Modular C# scripts for clean game logic
+
+---
+
+## 🛠️ Tools & Technologies Used
+
+| Category | Tools |
+|-----------|--------|
+| Game Engine | Unity 2022.3 LTS |
+| Language | C# |
+| IDE | Visual Studio / VS Code |
+| Version Control | Git & GitHub |
+| 3D Models | Unity Asset Store / Blender (optional) |
+| Textures | PBR / Free texture sites |
+| Sound | FreeSound / OpenGameArt ambient loops |
+
+---
+
+## 📁 Project Structure
+
+VirtualTour_LocalPark/
+├─ Assets/
+│ ├─ Scenes/
+│ │ ├─ Main.unity
+│ ├─ Scripts/
+│ │ ├─ PlayerController.cs
+│ │ ├─ HotspotController.cs
+│ │ ├─ UIManager.cs
+│ ├─ Prefabs/
+│ │ ├─ Bench.prefab
+│ │ ├─ Lamp.prefab
+│ │ ├─ Tree.prefab
+│ │ ├─ Fountain.prefab
+│ ├─ Audio/
+│ │ ├─ birds_ambient.mp3
+│ │ ├─ water_flow.mp3
+│ └─ Materials/
+│ ├─ Grass.mat
+│ ├─ StonePath.mat
+├─ Builds/
+│ ├─ WebGL/
+│ ├─ Windows/
+├─ Docs/
+│ ├─ developer_guide.md
+│ ├─ architecture.md
+├─ README.md
+└─ .gitignore
+
+yaml
+Copy code
+
+---
+
+## 🚀 How to Run the Project
+
+### 🧩 Option 1 — Play Locally in Unity
+1. Install **Unity Hub** and **Unity 2022.3 LTS (or later)**.
+2. Clone this repository:
+   ```bash
+   git clone https://github.com/<your-username>/VirtualTour_LocalPark.git
+Open the project in Unity Hub.
+
+Open the scene:
+Assets/Scenes/Main.unity
+
+Press Play ▶️ in the Unity Editor to start the tour.
+
+🌐 Option 2 — WebGL Build (Browser)
+Open the hosted link (if deployed on GitHub Pages / Netlify).
+Example: https://yourusername.github.io/VirtualTour_LocalPark
+
+🧩 Core Scripts Description
+Script	Purpose
+PlayerController.cs	Handles camera & player navigation.
+HotspotController.cs	Manages clickable hotspots to show information or teleport.
+UIManager.cs	Controls UI panels, menus, and teleport buttons.
+AudioManager.cs	Plays background ambient and interaction sounds.
+
+🖼️ Screenshots
+View	Description
+🌅 Main Park View	User’s entry point into the park
+🪑 Bench Area	Relaxing zone with ambient sounds
+🌊 Fountain Area	Dynamic water with particle effects
+💡 Lamp Zone	Night scene lighting test
+
+⚙️ Build & Deployment Instructions
+In Unity, go to File → Build Settings.
+
+Select WebGL (or your preferred platform).
+
+Click Build, choose output folder:
+Builds/WebGL/
+
+🧾 Project Goals
+Demonstrate real-time 3D rendering and interaction using Unity.
+
+Encourage digital tourism concepts using local environments.
+
+Serve as a learning base for beginners in Unity scene design, scripting, and deployment.
+
+🧑‍💻 Developers
+Developed by:
+👩‍💻 Divyadharshini P
+B.Tech — Artificial Intelligence and Data Science
+Sri Jayaram Institute of Engineering and Technology
+
+Contact:
+📧 divyaprakash2836@gmail.com
+📍 Gummidipoondi, Thiruvallur
+www.linkedin.com/in/divya-dharshini-1728dd
+
+📜 License
+This project is released under the MIT License — feel free to modify and use with proper credit.
+
+🧩 Future Enhancements
+🕶️ Add VR/AR support for immersive experience
+
+🌦️ Integrate dynamic weather & time system
+
+🧭 Add map-based teleportation menu
+
+🐦 Include animated animals for realism
+
+🌇 Day-night cycle & interactive environment
+
+❤️ Acknowledgments
+Unity Technologies for free learning resources
+
+Free3D / CGTrader / Sketchfab for models
+
+OpenGameArt & FreeSound for audio
+
+Mentors and friends for feedback and testing
+
+
